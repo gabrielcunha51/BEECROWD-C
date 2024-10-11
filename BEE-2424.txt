@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+
+	int a1, a2;
+	scanf("%d %d", &a1, &a2);
+
+	if ((a1 >= 0 && a1 <= 432) && (a2 >= 0 && a2 <= 468)) {
+        printf("dentro\n");
+    } else {
+        printf("fora\n");
+    }
+    return 0;
+}

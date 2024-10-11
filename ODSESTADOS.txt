@@ -1,0 +1,21 @@
+#include <stdio.h>
+#define QTD_ESTADOS 27
+
+int main()
+{
+    int x;
+    float ind, media = 0.0; 
+
+
+    for (x = 1; x <= QTD_ESTADOS; x++) {
+        printf("digite o indicador para o estado %d: ", x);
+        scanf("%f", &ind);
+        media = media + ind;
+    }
+
+
+    media = media / QTD_ESTADOS;
+    printf("indice medio brasileiro: %.2f\n", media);
+
+    return 0;
+}

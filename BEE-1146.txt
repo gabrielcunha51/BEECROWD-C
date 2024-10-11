@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+	int cres = 0, val = 0;
+	int i = 0;
+
+	do {
+		scanf("%d", &val);
+		for (i = 1; i <= val; i++) {
+			cres++;
+			if(i == val) {
+				printf("%d\n", cres);
+			} else {
+				printf("%d ", cres);
+			}
+		}
+		cres = 0;
+	} while(val != 0);
+	return 0;
+}

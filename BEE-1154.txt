@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+float res = 0;
+int idade, cnt = 0;
+
+do {
+scanf("%d", &idade);
+if (idade > 0) { 
+            res = res + idade;
+            cnt++;
+        }
+}while(idade> 0);
+res = res/cnt;
+printf("%.2f\n", res);
+return 0;
+}

@@ -1,0 +1,15 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int va, vb, vx;
+ 
+    scanf("%d", &va);
+    scanf("%d", &vb);
+    
+    vx = va + vb;
+    
+    printf("X = %d\n", vx);
+    
+    return 0;
+}

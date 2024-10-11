@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+
+	float num1, num2, res;
+	int op;
+
+	printf("Escolha a operacao desejada: 1-Soma, 2-Subtracao, 3-Multiplicacao, 4-Divisao\n");
+	scanf("%d", &op);
+
+	printf("Digite o Primeiro numero e o Segundo para calculo:\n");
+	scanf("%f %f", &num1, &num2);
+
+	if (op == 1) {
+		res = num1 + num2;
+		printf("RESULTADO: %.2f\n", res);
+
+	} else if (op == 2) {
+		res = num1 - num2;
+		printf("RESULTADO: %.2f\n", res);
+
+	} else if(op ==3) {
+		res = num1 * num2;
+		printf("RESULTADO: %.2f\n", res);
+
+	} else if (op == 4) {
+		res = num1 / num2;
+		printf("RESULTADO: %.2f\n", res);
+
+	} else {
+		printf("Resposta invalida.\n");
+
+	}
+
+	return 0;
+}

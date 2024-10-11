@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	int pulo, canos, altant, altnova, x, res = 1;
+
+	scanf("%i %i", &pulo, &canos);
+	scanf("%i", &altant);
+
+	for (x=1; x<canos; x++) {
+		scanf("%i", &altnova);
+		if (abs(altant - altnova) > pulo) {
+			res = 0;
+		}
+		altant = altnova;
+	}
+
+	if (res == 1) {
+		printf("YOU WIN\n");
+	} else {
+		printf("GAME OVER\n");
+	}
+	return 0;
+}

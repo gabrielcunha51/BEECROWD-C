@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int ncaso,ct;
+    float x, y, z, media;
+    scanf("%d", &ncaso);
+   
+    for(ct = 1; ct <= ncaso; ct++){
+        scanf("%f %f %f", &x, &y, &z);
+        media = ((x*2) + (y*3) + (z*5))/10;
+        printf("%.1f\n", media);
+    }
+ 
+    return 0;
+}

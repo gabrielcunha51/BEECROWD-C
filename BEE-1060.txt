@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main () {
+	int x, res=0;
+	float val;
+	for (x=1; x<=6; x++) {
+		scanf("%f", &val);
+		if (val > 0) {
+			res++;
+		}
+    }
+    printf("%d valores positivos\n",res);
+}

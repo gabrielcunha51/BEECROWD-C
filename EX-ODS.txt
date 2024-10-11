@@ -1,0 +1,15 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int a1, a2;
+    float d1, d2, res;
+    
+    printf("Ano e Fluxo recente\n");
+    scanf("%d %f", &a1, &d1);
+    printf("Ano e Fluxo antigo\n");
+    scanf("%d %f", &a2, &d2);
+    res = d1-d2;
+    printf("A diferença entre o fluxo de %d e %d é de: %.2f\n",a1, a2, res);
+    return 0;
+}
